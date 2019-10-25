@@ -1,0 +1,28 @@
+{
+	"env": {
+    "browser": true,
+    "node": true,
+    "es6": true,
+    "mocha": true,
+    "jest": true,
+    "jasmine": true
+	},
+	"parserOptions": {
+		"parser": "@typescript-eslint/parser",
+		"ecmaVersion": 2017,
+    "sourceType": "module"
+	},
+	"rules": {
+		"no-unused-expressions": "error",
+		"curly": "error",
+		"eqeqeq": "error"
+	},
+	"plugins": [
+		"vue",
+		"@typescript-eslint"
+	],
+	"extends": [
+		"plugin:vue/essential",
+		"plugin:prettier/recommended"
+	]
+}

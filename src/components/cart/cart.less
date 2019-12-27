@@ -1,0 +1,149 @@
+.mask {
+	background-color: rgba(62,58,57,.9);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 6;
+	.cart {
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		background: #FFF;
+		width: 100%;
+		padding-bottom: 5px;
+		.cart_tit {
+			display: flex;
+			justify-content: space-between;
+			height: .9rem;
+			background-color: #ececec;
+			padding: 0 .24rem;
+			p {
+				line-height: .9rem;
+				color: #595757;
+				font-size: .25rem;
+			}
+			em {
+				display: block;
+				width: .9rem;
+				color: #00B1B5;
+				height: .9rem;
+				line-height: .9rem;
+				position: relative;
+				font-style: normal;
+				i.icon_lj {
+					background-image: url(../../assets/icon.png);
+					background-repeat: no-repeat;
+					background-size: .38rem auto;
+					position: absolute;
+					margin-top: -.15rem;
+					top: 50%;
+					width: .4rem;
+					height: .3rem;
+					background-position: 0 0;
+				}
+				span {
+					padding-left: .4rem;
+				} 
+			}
+		}
+		ul {
+			padding-left: .24rem;
+			em {
+				font-style: normal;
+			}
+		}
+		
+		ul li {
+			border-bottom: 1px solid #B4B4B5;
+			overflow: hidden;
+			padding-top: .18rem;
+			padding-bottom: .18rem;
+		}
+		
+		ul li h6 {
+			width: 3.5rem;
+			float: left;
+			font-size: .23rem;
+		}
+		
+		ul li b {
+			width: .9rem;
+			text-align: center;
+			float: left;
+			color: #ff375a;
+			font-size: .23rem;
+		}
+		
+		ul li p {
+			float: right;
+			width: 1.26rem;
+			margin-right: .24rem;
+			text-align: center;
+			position: relative;
+		}
+		
+		ul li p .icon_plus {
+			left: .9rem;
+		}
+
+		.shop_sum {
+			height: .6rem;
+			padding-top: .16rem;
+			color: #ff375a;
+			text-align: right;
+			font-size: .25rem;
+			padding-right: .24rem
+		}
+		
+		.shop_sum b {
+			padding-right: .3rem;
+			line-height: .6rem
+		}
+		
+		.shop_sum a {
+			width: 2rem;
+			height: .6rem;
+			line-height: .6rem;
+			color: #fff;
+			text-align: center;
+			display: inline-block;
+			background: #00B1B5;
+		}
+
+	}
+}
+
+.slide-enter-active, .slide-leave-active {
+	transition: all .2s;
+	transform: translate3d(0, 0, 0);
+}
+.slide-enter, .slide-leave-to  {
+	transform: translate3d(0, 100%, 0) 
+}
+
+.icon_plus {
+	position: absolute;
+	margin-top: -.17rem;
+	top: 50%;
+	width: .34rem;
+	height: .34rem;
+	background-position: -1.15rem -.1rem;
+}
+
+.icon_reduce {
+	position: absolute;
+	margin-top: -.17rem;
+	top: 50%;
+	width: .34rem;
+	height: .34rem;
+	background-position: 0 -.1rem;
+}
+
+.icons {
+	background-image: url(../../assets/icon2.png);
+	background-size: 1.5rem;
+	background-repeat: no-repeat;
+	display: block
+}

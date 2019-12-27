@@ -1,0 +1,224 @@
+.mealMenu {
+	height: 100%;
+	padding-top: .14rem;
+	padding-bottom: .12rem;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: space-between;
+	overflow: hidden;
+	.menuType {
+		width: 2.08rem;
+		background-color: #FFF;
+		border-right: .02rem solid #DBDCDC;
+		overflow-y: scroll;
+		transition: all .2s;
+	}
+	.menuItem {
+		width: 1.6rem;
+		background-color: #FFF;
+		overflow-y: scroll;
+		transition: all .2s;
+		position: relative;
+		h5.fixed {
+			position: absolute;
+			top: 0;
+			left: 0;	
+			width: 100%;
+		}
+	}
+}
+
+.mealMenu .menuType ul li {
+	height: .9rem;
+	line-height: .9rem;
+	position: relative;
+	padding-left: .24rem;
+	padding-right: .24rem
+}
+
+.mealMenu .menuType ul li:last-child {
+	border: 0
+}
+
+
+.mealMenu .menuType ul li.left_active {
+	background: #fff
+}
+
+.mealMenu .menuType ul li::before {
+	display: block;
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: .08rem;
+	background-color: #00B1B5;
+	transition: all .3s;
+	transform: scale3d(1, 0, 1);
+	transform-origin: 50% 50%;
+}
+
+.mealMenu .menuType ul li.left_active::before {
+	transform: scale3d(1, 1, 1);
+}
+.mealMenu .menuType_active ul li.left_active::before {
+	transform: scale3d(1, 0, 1);
+}
+
+.mealMenu .menuType ul li.left_active span {
+	border-bottom: 0
+}
+.mealMenu .menuType_active ul li.left_active span {
+	border-bottom: 1px solid #B4B4B5;
+}
+
+.mealMenu .menuType ul li span {
+	padding-left: .2rem;
+	height: .9rem;
+	width: 1.38rem;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	display: block;
+	border-bottom: 1px solid #B4B4B5;
+	font-size: 12px;
+	color: #595757;
+}
+
+.mealMenu .menuType_active {
+	width: 4.78rem;
+	background: #f7f7f7
+}
+
+.mealMenu .menuType_active ul li.left_active .icon_sjx {
+	display: block
+}
+
+.menuType .icon_sjx {
+	width: 0;
+	height: 0;
+	border-top: .08rem solid transparent;
+	border-left: .12rem solid #9E9F9F;
+	border-bottom: .08rem solid transparent;
+	display: block;
+	position: absolute;
+	left: .24rem;
+	top: 50%;
+	margin-top: -.08rem;
+	display: none;
+}
+
+.mealMenu .menuType_active ul li span {
+	width: 4.3rem;
+}
+
+.mealMenu .menuItem h5 {
+	background: #f3f5f7;
+	color: #888;
+	padding: .12rem .24rem;
+	font-size: .25rem;
+}
+
+.mealMenu .menuItem dl {
+	padding-left: .24rem;
+	position: relative;
+	margin-top: .08rem
+}
+
+.mealMenu .menuItem dl dt {
+	width: .9rem;
+	height: .9rem;
+	padding-bottom: .08rem;
+	border-bottom: .02rem solid #DBDCDC;
+	line-height: 1;
+}
+
+.mealMenu .menuItem dl dt img {
+	width: 100%
+}
+
+.mealMenu .menuItem dl:last-child {
+	padding-bottom: .2rem
+}
+
+.mealMenu .menuItem dl dd {
+	display: none;
+	border-bottom: .02rem solid #DBDCDC;
+	width: 2.96rem;
+	position: absolute;
+	left: 1.34rem;
+	top: 0;
+	height: .9rem;
+	padding-bottom: .08rem
+}
+
+.mealMenu .menuItem dl dd h6 {
+	display: block;
+	color: #595757;
+	font-size: .22rem;
+	line-height: .5rem;
+	font-weight: normal;
+}
+
+.mealMenu .menuItem dl dd b {
+	color: #ff375a;
+	font-size: .23rem;
+	line-height: .4rem
+}
+
+.mealMenu .menuItem dl dd p {
+	width: 1.26rem;
+	text-align: center;
+	position: absolute;
+	right: .2rem;
+	height: .36rem;
+	top: 50%;
+	font-size: .22rem;
+}
+
+.mealMenu .menuItem dl dd p .icon_plus {
+	left: .9rem
+}
+
+.mealMenu .menuItem_active dl {
+	border: 0
+}
+
+.mealMenu .menuItem_active dl dt {
+	border: 0
+}
+
+.mealMenu .menuItem_active dl dd {
+	display: block
+}
+
+.mealMenu .menuItem_active {
+	width: 4.3rem;
+	background: #fff
+}
+
+.icon_plus {
+	position: absolute;
+	margin-top: -.17rem;
+	top: 50%;
+	width: .34rem;
+	height: .34rem;
+	background-position: -1.15rem -.1rem;
+}
+
+.icon_reduce {
+	position: absolute;
+	margin-top: -.17rem;
+	top: 50%;
+	width: .34rem;
+	height: .34rem;
+	background-position: 0 -.1rem;
+}
+
+.icons {
+	background-image: url(../../../../assets/icon2.png);
+	background-size: 1.5rem;
+	background-repeat: no-repeat;
+	display: block
+}

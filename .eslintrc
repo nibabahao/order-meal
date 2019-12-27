@@ -10,7 +10,7 @@
 	"parserOptions": {
 		"parser": "@typescript-eslint/parser",
 		"ecmaVersion": 2017,
-    "sourceType": "module"
+		"sourceType": "module"
 	},
 	"rules": {
 		"no-unused-expressions": "error",

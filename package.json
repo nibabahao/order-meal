@@ -78,7 +78,7 @@
     "mongoose": "^5.6.1",
     "polyfill": "^0.1.0",
     "prettier-eslint-cli": "^5.0.0",
-    "pug": "^2.0.4",
+    "pug": "^3.0.1",
     "pug-plain-loader": "^1.0.0",
     "rxjs": "^6.5.3",
     "typescript": "~3.5.3",
